@@ -4,13 +4,13 @@ Sistema para importação de dados de planilha do excel e relatórios.
 
 ### Linguagens
 
-*PHP 7.3
+-PHP 7.3
 
-*Laravel 5.6
+-Laravel 5.6
 
-*SQL Server
+-SQL Server
 
-*Bootstrap 4
+-Bootstrap 4
 
 ### Detalhes
 
