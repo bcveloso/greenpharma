@@ -34,17 +34,17 @@
                   <div class="form-group">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">  
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="email" required>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="email" required value="{{ old('email') }}">
                   </div>
                   <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required>
+                    <input type="text" name="nome" class="form-control" id="nome" placeholder="Nome" required value="{{ old('nome') }}">
                   </div>
                   <div class="form-group">
                     <label for="nome">Nome</label>
                     <select name="tipo" id="tipo" class="form-control">
-                        <option value="1">Administrador</option>
-                        <option value="2">Analista</option>
+                        <option value="1" {{ (old("tipo") == '1' ? "selected":"") }}>Administrador</option>
+                        <option value="2" {{ (old("tipo") == '2' ? "selected":"") }}>Analista</option>
                     </select>
                   </div>
                   <div class="form-group">

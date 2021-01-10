@@ -35,7 +35,7 @@
                   <div class="form-group">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">  
                     <label for="email">Nome de Usuário</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" value="{{ old('email') }}">
                   </div>
                   <div class="form-group">
                     <label for="password">Senha</label>

@@ -19,16 +19,16 @@
                                 <div class="form-group row">
                                     <label for="industria" class="col-sm-3 col-form-label">Indústria</label>
                                     <select class="col-sm-5 form-control" name="industria" id="industria">
-                                        <option value="EMS S/A">EMS S/A</option>
-                                        <option value="HYPERA S/A">HYPERA S/A</option>
+                                        <option value="EMS S/A" selected>EMS S/A</option>
+                                        <option value="HYPERA S/A" disabled>HYPERA S/A</option>
                                     </select>
                                 </div>
                                 <div class="form-group row">
                                     <label for="unidade" class="col-sm-3 col-form-label">Unidade</label>
                                     <select class="col-sm-5 form-control" name="unidade" id="unidade">
-                                        <option value="Green Pharma - BA">Green Pharma - BA</option>                        
                                         <option value="Green Pharma - MG" selected>Green Pharma - MG</option>
-                                        <option value="Green Pharma - PE">Green Pharma - PE</option>
+                                        <option value="Green Pharma - BA" disabled>Green Pharma - BA</option>                        
+                                        <option value="Green Pharma - PE" disabled>Green Pharma - PE</option>
                                         
                                     </select>
                                 </div>

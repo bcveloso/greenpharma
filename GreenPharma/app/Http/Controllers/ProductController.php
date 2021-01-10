@@ -21,7 +21,16 @@ class ProductController extends Controller
         $unidade  = $request->unidade;
         $date_inicial = $request->date_inicial;
         $date_final = $request->date_final;
-        
+        if(empty($date_inicial)){
+            return redirect()->back()->withInput()->withErrors(['Data inicial deve ser preenchida!']);
+        }
+        if(empty($date_final)){
+            return redirect()->back()->withInput()->withErrors(['Data final deve ser preenchida!']);
+        }
+        if(strtotime($date_inicial) > strtotime($date_final)){
+            return redirect()->back()->withInput()->withErrors(['Data inicial deve ser menor que data final!']);
+        }
+
         if($type == 1){
             $ret = $this->getAmountProducts($industria,$unidade,$date_inicial,$date_final); // Faz consulta do procedure com a quantidade de itens
         }else{
